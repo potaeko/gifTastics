@@ -7,7 +7,7 @@ function displayCartoon() {
     $("#cartoonImages").empty();
     var cartoonName = $(this).attr("dataName");
     //GIPHY API
-    var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=2b2e800a52b5424ca5bd59a9713fa4a6&q=" + cartoonName + "&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=2b2e800a52b5424ca5bd59a9713fa4a6&q=" + cartoonName + "&limit=10";
 
     $.ajax({
         url: queryURL,
